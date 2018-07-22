@@ -47,6 +47,8 @@
 .nav__item {
     color: $grey;
     padding: $s-size;
+    text-decoration: none;
+    font-family: $r-family;
     h4 {
         font-family: $r-family;
         margin: 0;

@@ -21,6 +21,7 @@
 
 .portfolio__layout {
   display: flex;
+  //flex-direction: row;
   flex-flow: row wrap;
   justify-content: center;
 }
@@ -35,6 +36,7 @@
   width: 30rem;
   height: 25rem;
   margin: $l-size $m-size;
+  text-decoration: none;
   position: relative;
   a:hover {
     text-decoration: none;
@@ -58,7 +60,6 @@
   font-family: $l-family;
   text-align: center;
   color: $dark-grey;
-  margin-top: $s-size;
 }
 
 .portfolio__box-link {
@@ -66,7 +67,6 @@
   border: none;
   color: $dark-grey;
   display: inline-block;
-  margin: $s-size 0;
   font-size: $font-size-large;
   font-weight: 300;
   padding: $s-size;
