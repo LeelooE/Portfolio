@@ -1,0 +1,43 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x:hidden;
+}
+.intro {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20rem 0 30rem 0;
+  @media (max-width: $desktop-breakpoint) {
+    padding: 10rem 2rem;
+}
+}
+
+.intro__box {
+  background: fade-out($paper, 0.05);
+  border-bottom: 5px solid $grey;
+  border-right: 5px solid $grey;
+  border-left: 5px solid $grey;
+  border-radius: 3px;
+  color: $grey;
+  padding: $m-size $m-size;
+  text-align: center;
+  width: 75rem;
+  margin-bottom: $l-size;
+}
+
+.intro__title {
+  font-family: $l-family;
+  margin: 0 0 $m-size 0;
+  line-height: 1;
+  color: $dark-grey;
+  font-size: $font-size-Xlarge;
+}
+
+.intro__body {
+  font-family: $r-family;
+  font-size: $font-size-large;
+  margin: 0 $m-size $m-size $m-size;
+}

@@ -10,3 +10,43 @@
     margin: 0 0 $m-size 0;
     font-size: initial;
 }
+.outer-form-box {
+    background: $lavendar;
+    padding: 10rem 15rem;
+}
+
+.form-layout {
+    background: $paper;
+    display: flex;
+    justify-content: center;
+    padding: 15rem 0;
+    @media(max-width: 1024px){
+        background: white;
+    }
+}
+
+.contact-form-box {
+    background: $paper;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    > * {
+        margin-bottom:  $m-size;
+    }
+    input:hover {
+        cursor: pointer;
+    }
+}
+.contact-form-box__title {
+    text-align: center;
+    color: $dark-grey;
+    line-height: 1;
+    font-family: $r-family;
+}
+
+.contact-form-box__item {
+    font-family: $l-family;
+    color: $dark-grey;
+    margin-top: $s-size;
+    font-size: $s-size;
+}

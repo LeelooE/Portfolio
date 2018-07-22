@@ -1,0 +1,26 @@
+.info {
+    background: $lavendar;
+    padding: 10rem 0;
+    background: $paper;
+}
+
+.info__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.info__title {
+    font-family: $r-family;
+    color: $dark-grey;
+    font-size: $font-size-Xlarge;
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+    padding: 0 $xl-size;
+}
+
+.info__body {
+    font-family: $l-family;
+    padding: 0 $xl-size;
+    font-size: $font-size-large;
+}

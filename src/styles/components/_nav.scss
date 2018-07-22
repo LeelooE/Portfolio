@@ -1,0 +1,77 @@
+.nav {
+    background: $paper;
+    margin-left: $s-size;
+    @media (max-width: $desktop-breakpoint) {
+        display: none;
+    }
+}
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $desktop-breakpoint) {
+        display: hidden;
+    }
+    
+}
+.nav-background {
+    background: rgba(213,213,213,1);
+    background: rgba(213,213,213,1);
+    background: -moz-linear-gradient(top, rgba(213,213,213,1) 0%, rgba(213,213,213,1) 51%, rgba(109,121,147,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(213,213,213,1)), color-stop(51%, rgba(213,213,213,1)), color-stop(100%, rgba(109,121,147,1)));
+    background: -webkit-linear-gradient(top, rgba(213,213,213,1) 0%, rgba(213,213,213,1) 51%, rgba(109,121,147,1) 100%);
+    background: -o-linear-gradient(top, rgba(213,213,213,1) 0%, rgba(213,213,213,1) 51%, rgba(109,121,147,1) 100%);
+    background: -ms-linear-gradient(top, rgba(213,213,213,1) 0%, rgba(213,213,213,1) 51%, rgba(109,121,147,1) 100%);
+    background: linear-gradient(to bottom, rgba(213,213,213,1) 0%, rgba(213,213,213,1) 51%, rgba(109,121,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5d5d5', endColorstr='#6d7993', GradientType=0 );
+}
+
+.nav__content {
+    align-items: center;
+    display: flex;
+    padding: $m-size 0;
+    a:hover {
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color: $dark-grey;
+    }
+    text-decoration: none;
+    @media (max-width: $desktop-breakpoint) {
+        padding: $s-size 0;
+       display: flex;
+        flex-direction: row;
+    }
+}
+
+.nav__item {
+    color: $grey;
+    padding: $s-size;
+    h4 {
+        font-family: $r-family;
+        margin: 0;
+        font-size: $font-size-large;
+    }
+    @media (max-width: 320px) {
+        padding: .5rem;
+    }
+
+}
+
+.nav__icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $m-size 0;
+    margin-right: $s-size;
+    @media (max-width: $desktop-breakpoint) {
+        visibility: hidden;
+    }
+}
+
+.icon {
+    padding: $s-size;
+    color: $grey;
+    height: 5rem;
+    width: 5rem;
+}

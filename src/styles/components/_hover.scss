@@ -1,0 +1,30 @@
+.hover-effect-wane, .hover-effect-wax {
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    
+  }
+  .hover-effect-wane {
+    opacity:.3;
+  }
+  .hover-effect-container:hover .hover-effect-wane {
+    opacity:0;
+  }
+  .hover-effect-wax {
+    opacity:0;
+  }
+  .hover-effect-container:hover .hover-effect-wax {
+    opacity:1;
+  }
+  
+  .link-overlay a span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    opacity:.3;
+  }

@@ -1,0 +1,60 @@
+.contact {
+    background: $dusty;
+    background-size: cover;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__box {
+    background: $paper;
+    width: 90rem;
+    justify-content: center;
+    display: flex;
+    @media (max-width: $desktop-breakpoint) {
+        width: 0rem;
+    }
+}
+
+.contact__box-inner {
+    flex-direction: column;
+    background: $paper;
+    width: 60rem;
+    text-align: center;
+    margin: 10rem 0;
+    a:hover {
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color: $dark-grey;
+    }
+    @media (max-width: $desktop-breakpoint) {
+        margin: 0rem;
+        width: 30rem;
+        padding: 0 $m-size;
+    }
+}
+
+.contact__title {
+    font-family: $l-family;
+    font-size: 5rem;
+    line-height: 1;
+    padding: $s-size 0;
+}
+
+.contact__body {
+    font-family: $r-family;
+    padding: 0 $xl-size;
+    font-size: $font-size-large;
+    margin: $s-size 0;
+    @media (max-width: $desktop-breakpoint) {
+        margin: 0rem;
+        width: 25rem;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.contact__link {
+    margin: $l-size 0;
+}

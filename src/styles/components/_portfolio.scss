@@ -1,0 +1,75 @@
+.portfolio {
+  background: $lavendar;
+  padding: 0 0 10rem 0;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__title {
+  text-align: center;
+  color: $dark-grey;
+  font-size: 5rem;
+  margin: 0 40rem $m-size 40rem;
+  line-height: 1;
+  font-family: $r-family;
+  border-top: 5px solid $grey;
+  border-bottom: 5px solid $grey;
+  padding: $s-size 0;
+}
+
+.portfolio__layout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.portfolio__box {
+  border: 5px solid $grey;
+  color: $grey;
+  background: fade-out($paper, 0.15);
+  border-radius: 3px;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 30rem;
+  height: 25rem;
+  margin: $l-size $m-size;
+  position: relative;
+  a:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover,
+  a:active {
+    color: $dark-grey;
+  }
+  text-decoration: none;
+}
+
+.portfolio__box-title {
+  text-align: center;
+  color: $dark-grey;
+  line-height: 1;
+  font-family: $r-family;
+}
+
+.portfolio__box-body {
+  font-family: $l-family;
+  text-align: center;
+  color: $dark-grey;
+  margin-top: $s-size;
+}
+
+.portfolio__box-link {
+  background: $dusty;
+  border: none;
+  color: $dark-grey;
+  display: inline-block;
+  margin: $s-size 0;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+  text-decoration: none;
+  line-height: 1;
+}
