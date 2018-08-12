@@ -57,7 +57,7 @@
     @media (max-width: 320px) {
         padding: .5rem;
     }
-
+    
 }
 
 .nav__icons {
@@ -68,6 +68,12 @@
     margin-right: $s-size;
     @media (max-width: $desktop-breakpoint) {
         visibility: hidden;
+    }
+    .icon:hover {
+        text-decoration: none;
+    }
+    .icon:hover, a:active {
+        color: $dark-grey;
     }
 }
 

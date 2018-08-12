@@ -60,6 +60,7 @@
   font-family: $l-family;
   text-align: center;
   color: $dark-grey;
+  margin: $s-size;
 }
 
 .portfolio__box-link {
@@ -72,4 +73,22 @@
   padding: $s-size;
   text-decoration: none;
   line-height: 1;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $paper;
+}
+
+.portfolio__box:hover .overlay {
+  opacity: 1;
 }

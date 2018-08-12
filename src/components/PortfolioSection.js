@@ -6,8 +6,9 @@ const PortfolioSection = () => (
       <h1 className="portfolio__title">Portfolio</h1>
     </div>
     <div className="portfolio__layout">
-      <div className="portfolio__box hover-effect-container link-overlay">
-        <div className="hover-effect-wax">
+      <div className="portfolio__box">
+      <div className="overlay">
+        <div className="in-box-hover">
           <h1 className="portfolio__box-title">Expensify</h1>
           <h3 className="portfolio__box-body">
             An app that tracks your expenses. Created while learning React.
@@ -19,10 +20,11 @@ const PortfolioSection = () => (
             Visit Website
           </a>
         </div>
-        <span className="hover-effect-wane">&nbsp;</span>
+        </div>
       </div>
-      <div className="portfolio__box hover-effect-container link-overlay">
-        <div className="hover-effect-wax">
+      <div className="portfolio__box">
+        <div className="overlay">
+        <div className="in-box-hover">
           <h1 className="portfolio__box-title">Indecision</h1>
           <h3 className="portfolio__box-body">
             An app that decides what you should do. Created while learning
@@ -35,10 +37,11 @@ const PortfolioSection = () => (
             Visit Website
           </a>
         </div>
-        <span className="hover-effect-wane">&nbsp;</span>
+        </div>
       </div>
-      <div className="portfolio__box hover-effect-container link-overlay">
-        <div className="hover-effect-wax">
+      <div className="portfolio__box">
+        <div className="overlay">
+        <div className="in-box-hover">
           <h1 className="portfolio__box-title">Quirky Twitter</h1>
           <h3 className="portfolio__box-body">
             Mock app of twitter. Created while practicing new learned skills.
@@ -50,10 +53,11 @@ const PortfolioSection = () => (
             Visit Website
           </a>
         </div>
-        <span className="hover-effect-wane">&nbsp;</span>
+        </div>
       </div>
-      <div className="portfolio__box hover-effect-container link-overlay">
-        <div className="hover-effect-wax">
+      <div className="portfolio__box">
+        <div className="overlay">
+        <div className="in-box-hover">
           <h1 className="portfolio__box-title">Brew-tea-ful</h1>
           <h3 className="portfolio__box-body">
             A blog about all and everything about tea. Created as a draft for
@@ -66,7 +70,7 @@ const PortfolioSection = () => (
             Visit Website
           </a>
         </div>
-        <span className="hover-effect-wane">&nbsp;</span>
+        </div>
       </div>
     </div>
   </div>
