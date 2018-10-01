@@ -11,7 +11,7 @@ class Intro extends React.Component {
           <div>
             <h3 className="intro__body">
               Hello! I'm a front-end developer and a student based in Washington
-              state focused on learning and broadening my horizons.
+              state, focused on learning and broadening my horizons.
             </h3>
           </div>
         </div>

@@ -13,13 +13,16 @@
 .outer-form-box {
     background: $lavendar;
     padding: 10rem 15rem;
+    width: max;
+    @media(max-width: 1024px){
+        padding: 5rem 8rem;
+    }
 }
 
 .form-layout {
-    background: $paper;
-    display: flex;
+    background: $lavendar;
     justify-content: center;
-    padding: 15rem 0;
+    padding: 1rem 0;
     @media(max-width: 1024px){
         background: white;
     }
@@ -36,17 +39,52 @@
     input:hover {
         cursor: pointer;
     }
+    .portfolio__box-link:hover {
+        text-decoration: none;
+        background: fade-out($dusty, 0.15);
+        cursor: pointer;
+        color: $dark-grey;
+      }
+}
+.contact-line {
+    width: 25%;
+    height: .5rem;
+    margin: auto;
+    background-color: $dusty;
 }
 .contact-form-box__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: $s-size;
+    background-color: $paper;
+    padding: 2rem;
     text-align: center;
-    color: $dark-grey;
+    > h1 {
+        margin: 0 3rem;
+        font-weight: lighter;
+        color: $dark-grey;
     line-height: 1;
     font-family: $r-family;
+    @media(max-width: 1024px){
+        
+    }
+    }
 }
 
 .contact-form-box__item {
+    > h2 {
+        font-weight: lighter;
     font-family: $l-family;
     color: $dark-grey;
-    margin-top: $s-size;
+    }
     font-size: $s-size;
+    margin-bottom: $m-size;
+    > input {
+        width: 30rem;
+        height: 3rem;
+        text-align: center;
+        border: none;
+        margin-bottom: $m-size;
+    }
 }

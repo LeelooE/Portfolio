@@ -13,26 +13,32 @@
     display: flex;
     text-align: center;
     @media (max-width: $desktop-breakpoint) {
-        width: 40rem;
+        width: 100%;
+        margin: 5rem;
     }
 }
 
 .contact__box-inner {
+    justify-content: center;
     flex-direction: column;
     background: $paper;
     width: 60rem;
     text-align: center;
-    margin: 10rem 0;
-    a:hover {
+    
+    margin: 5rem 0;
+    > a {
+        margin: 2rem 0;
+    }
+    .portfolio__box-link:hover {
         text-decoration: none;
-    }
-    a:hover, a:active {
+        background: fade-out($dusty, 0.15);
+        cursor: pointer;
         color: $dark-grey;
-    }
+      }
     @media (max-width: $desktop-breakpoint) {
         margin: 0rem;
-        width: 30rem;
-        padding: 0 $m-size;
+        width: 100%;
+        padding: 0 $l-size;
     }
 }
 
@@ -45,17 +51,19 @@
 
 .contact__body {
     font-family: $r-family;
-    padding: 0 $xl-size;
     font-size: $font-size-large;
     margin: $s-size 0;
     @media (max-width: $desktop-breakpoint) {
-        margin: 0rem;
-        width: 25rem;
-        margin: 0;
-        text-align: center;
+        width: 100%;
     }
 }
 
 .contact__link {
     margin: $l-size 0;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

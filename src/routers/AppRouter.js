@@ -10,8 +10,6 @@ const AppRouter = () => (
         <div>
             <Route path="/" component={Dashboard} exact={true} />
             <Route path="/contact" component={ContactPage} />
-            <Route component={NotFoundPage} />
-       
         </div>
     </BrowserRouter>
 );

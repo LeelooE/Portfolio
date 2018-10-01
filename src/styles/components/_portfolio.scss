@@ -6,75 +6,98 @@
   display: flex;
   justify-content: center;
 }
-
+.portfolio-line {
+  margin: auto;
+  width: 30rem;
+  height: 0.5rem;
+  background-color: $dusty;
+}
 .portfolio__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
   text-align: center;
   color: $dark-grey;
-  font-size: 5rem;
-  margin: 0 40rem $m-size 40rem;
-  line-height: 1;
-  font-family: $r-family;
-  border-top: 5px solid $grey;
-  border-bottom: 5px solid $grey;
-  padding: $s-size 0;
+  margin-bottom: $xl-size;
+  background-color: $paper;
+  @media (max-width: $desktop-breakpoint) {
+    margin-top: 10rem;
+  }
+  > h1 {
+    text-align: center;
+    line-height: 1;
+    font-weight: lighter;
+    font-family: $l-family;
+    font-size: 5rem;
+    margin: $m-size;
+    padding: $s-size 0;
+    @media (max-width: $desktop-breakpoint) {
+      font-size: 4rem;
+    }
+  }
 }
 
 .portfolio__layout {
   display: flex;
-  //flex-direction: row;
+  margin-top: $xl-size;
+  margin-bottom: $xl-size;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .portfolio__box {
-  border: 5px solid $grey;
   color: $grey;
   background: fade-out($paper, 0.15);
-  border-radius: 3px;
   padding: $l-size $m-size;
   text-align: center;
   width: 30rem;
   height: 25rem;
   margin: $l-size $m-size;
-  text-decoration: none;
   position: relative;
-  a:hover {
+  .portfolio__box-link:hover {
     text-decoration: none;
+    background: fade-out($dusty, 0.15);
     cursor: pointer;
-  }
-  a:hover,
-  a:active {
     color: $dark-grey;
   }
-  text-decoration: none;
 }
-
+.portfolio__box1 {
+  @extend .portfolio__box;
+}
+.icon1 {
+  margin: auto;
+  font-size: 10rem;
+}
 .portfolio__box-title {
+  font-weight: lighter;
   text-align: center;
   color: $dark-grey;
   line-height: 1;
   font-family: $r-family;
+  margin-top: 3rem;
 }
 
 .portfolio__box-body {
+  font-weight: lighter;
   font-family: $l-family;
   text-align: center;
   color: $dark-grey;
   margin: $s-size;
 }
-
 .portfolio__box-link {
-  background: $dusty;
+  text-decoration: none;
+  background-color: $dusty;
+  
   border: none;
   color: $dark-grey;
   display: inline-block;
   font-size: $font-size-large;
   font-weight: 300;
   padding: $s-size;
-  text-decoration: none;
+  
   line-height: 1;
 }
-
 
 .overlay {
   position: absolute;
@@ -85,7 +108,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: $paper;
 }
 

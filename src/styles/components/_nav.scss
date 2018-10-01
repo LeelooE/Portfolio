@@ -2,7 +2,7 @@
     background: $paper;
     margin-left: $s-size;
     @media (max-width: $desktop-breakpoint) {
-        display: none;
+        
     }
 }
 .nav-header {
@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     @media (max-width: $desktop-breakpoint) {
-        display: hidden;
+        
     }
     
 }
@@ -35,6 +35,7 @@
     }
     a:hover, a:active {
         color: $dark-grey;
+        border-bottom: .2rem solid $dusty;
     }
     text-decoration: none;
     @media (max-width: $desktop-breakpoint) {
@@ -51,6 +52,7 @@
     font-family: $r-family;
     h4 {
         font-family: $r-family;
+        font-weight: lighter;
         margin: 0;
         font-size: $font-size-large;
     }
@@ -66,7 +68,7 @@
     align-items: center;
     padding: $m-size 0;
     margin-right: $s-size;
-    @media (max-width: $desktop-breakpoint) {
+    @media (max-width: 581px) {
         visibility: hidden;
     }
     .icon:hover {
@@ -74,6 +76,7 @@
     }
     .icon:hover, a:active {
         color: $dark-grey;
+        border-bottom: .2rem solid $dusty;
     }
 }
 

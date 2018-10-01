@@ -12,20 +12,18 @@ html,body {
   padding: 20rem 0 30rem 0;
   @media (max-width: $desktop-breakpoint) {
     padding: 10rem 2rem;
+    margin-top: 8rem;
 }
 }
-
 .intro__box {
-  background: fade-out($paper, 0.05);
-  border-bottom: 5px solid $grey;
-  border-right: 5px solid $grey;
-  border-left: 5px solid $grey;
-  border-radius: 3px;
+  background-color: $paper;
   color: $grey;
   padding: $m-size $m-size;
   text-align: center;
   width: 75rem;
   margin-bottom: $l-size;
+  border-bottom: .5rem solid $dusty;
+  border-top: .5rem solid $dusty;
 }
 
 .intro__title {
@@ -33,11 +31,14 @@ html,body {
   margin: 0 0 $m-size 0;
   line-height: 1;
   color: $dark-grey;
+  font-weight: lighter;
   font-size: $font-size-Xlarge;
+  padding-top: $s-size;
 }
 
 .intro__body {
   font-family: $r-family;
+  font-weight: lighter;
   font-size: $font-size-large;
   margin: 0 $m-size $m-size $m-size;
 }
